@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+    background-color: rgb(190, 177, 160);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 33, 33);
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 100;
+
+
+}
+
+body {
+    background-color: rgb(240, 234, 222);
+}
+
+
+.logo {
+    color: rgb(240, 234, 222);
+    font-weight: 700;
+    font-size: 23px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(95, 33, 33);
+    height: 50px;
+    padding: 17px 20px;
+    border-radius: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.navbar a {
+    color: rgb(161, 161, 161);
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(252, 248, 244);
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    
+}
+
+.nav-icons a {
+    color: rgb(252, 248, 244);
+    display: flex;
+    align-items: center;
+    height: 20px;
+   
+
+}
+.nav-icons svg{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.sonicon svg{
+    display: none;
+    
+    
+}
+
+/* home */
+.home {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 24px;
+    margin-top: 120px;
+
+}
+
+.home-img {
+    width: 100%;
+
+}
+
+.home-text h1 {
+    font-size: 56px;
+    color: rgb(95, 33, 33);
+    font-family: "DM Serif Display", serif;
+}
+
+.home-text p {
+    max-width: 300px;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+.home-text a {
+    color: rgb(252, 248, 244);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    background-color: rgb(95, 33, 33);
+    width: 200px;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.home-icon {
+    background-color: rgb(219, 88, 41);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* heading */
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    display: flex;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto,160px));
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.ser-box {
+    background-color: rgb(95, 33, 33);
+    color: rgb(247, 240, 227);
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.ser-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.product-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.products h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+}
+
+.products p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.product-content {
+   background-color: rgb(240, 234, 222);
+   position: relative;
+   border-radius: 25px;
+   padding: 25px;
+   background-color: rgb(240, 234, 222);
+   display: flex;
+   margin: 20px 40px;
+   flex-direction: column;
+   
+   
+}
+
+.product-box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-box p {
+    display: flex;
+    margin-top: 40px;
+    padding: 6px;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.product-box p:hover {
+    background-color: rgb(181, 57, 12);
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    cursor: pointer;
+    left: 20px;
+    top: 20px;
+    background-color: rgb(250, 249, 249);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-box {
+    border-radius: 20px;
+    background-color: rgb(190, 177, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.product-info {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.product-info div {
+    padding: 6px;
+    width: 28px;
+    height: auto;
+    color: antiquewhite;
+    background-color: rgb(181, 57, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.product-info div:hover {
+    color: black;
+}
+
+.heading {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-top: 100px;
+    color: rgb(95, 33, 33);
+
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 24px;
+}
+
+.team-box {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.team-box img {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.team-box h2 {
+    color: black;
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.team-box span {
+    color: black;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    color: gray;
+}
+
+.team-box p {
+    margin-top: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* rewiew area */
+.rewiew-box img {
+    box-shadow: 0 4px 16px rgb(68, 68, 68);
+    border: 7px solid #fff;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.rewiews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rewiew-box {
+    background-color: rgb(190, 177, 160);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 330px;
+    margin-top: 30px;
+}
+
+.rewiew-box h3 {
+    color: rgb(93, 91, 91);
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+}
+
+.rewiew-box span {
+    color: rgb(59, 27, 27);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.rewiew-box p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 20px;
+    color: rgb(46, 44, 44);
+}
+
+/* book area */
+.book {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.book-data {
+    color: antiquewhite;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 64px;
+
+}
+
+.book-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.book-overlay p {
+    color: antiquewhite;
+    
+
+}
+
+.inputs {
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 40px;
+    width: 500px;
+}
+
+.book img {
+    opacity:0.7;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.input-box {
+    color: black;
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.input-box input {
+    color: black;
+    border: none;
+    background-color: antiquewhite;
+    outline: none;
+}
+
+.book-btn {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    background-color: rgb(69, 24, 24);
+    color: antiquewhite;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid rgb(69, 24, 24);
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 48px !important;
+    padding: 48px 0 32px;
+    justify-content: space-between;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-box h3 {
+    color: rgb(69, 24, 24);
+    font-family: "Playfair Display", serif;
+}
+
+.footer-box a {
+    color: rgb(69, 24, 24);
+    font-family: "Playfair Display", serif;
+    transition: all 0.2s;
+}
+
+.footer-box a:hover {
+    color: rgb(182, 69, 17);
+}
+
+.logoo {
+    color: rgb(69, 24, 24);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.social a {
+    color: rgb(69, 24, 24);
+    font-size: 20px;
+}
+
+.copyright {
+    color: rgb(69, 24, 24);
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding: 30px;
+
+}
+@media (max-width: 1080px) {
+    .container {
+      width: 90%;
+    }
+    .product-content {
+      padding: 40px;
+      
+    }
+  }
+  @media (max-width: 875px) {
+    .reviews {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .service-content{
+        row-gap: 20px;
+    }
+    .footer{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+    }
+  }
+  @media (max-width: 770px) {
+    .home {
+      min-height: 500px;
+      grid-template-columns: 1fr;
+      margin-top: 82px;
+    }
+    .home-text {
+      order: 1;
+    }
+    .heading h2 {
+      font-size: 26px;
+    }
+    
+    .reviews {
+      grid-template-columns: 1fr;
+    }
+    .book {
+      padding: 20px;
+    }
+    .book-data {
+      margin-top: 48px;
+      max-width: 350px;
+      width: 100%;
+    }
+    .book-data form {
+      display: grid;
+      padding: 15px;
+      border-radius: 15px;
+    }
+    footer {
+      grid-template-columns: repeat(3, auto);
+    }
+   
+    
+    .inputs{
+        max-width: 75%;
+        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 30px;
+    }
+    .input-box{
+        text-decoration: solid black;
+        
+    }
+    
+       
+    
+    .service-content{
+        column-gap: 20px;
+
+    }
+    .footer{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+    }
+   }
+  
+  @media (max-width: 700px) {
+    header {
+      top: 15px;
+    }
+    .nav {
+      padding: 14px 20px;
+    }
+    .logo {
+      font-size: 20px;
+    }
+    .navbar {
+      display: none;
+    }
+    .sonicon svg{
+        display: block;
+    }
+    .service-content{
+        row-gap: 20px;
+        
+    }
+    .product-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .rewiew-box{
+        width: 100%;
+    }
+    .footer{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+  }
+  @media (max-width: 500px) {
+    .service-content {
+      justify-content: center;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    .product-content {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    
+    .footer{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        
+    }
+  }
+  
+
+
